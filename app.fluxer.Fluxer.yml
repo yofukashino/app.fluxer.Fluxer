@@ -1,9 +1,9 @@
 id: app.fluxer.Fluxer
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "25.08"
+base-version: '25.08'
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node24
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -41,13 +41,13 @@ modules:
         BUILD_CHANNEL: stable
         LK_CUSTOM_WEBRTC: /run/build/fluxer/webrtc-linux
         CARGO_HOME: /run/build/fluxer/cargo
-        CARGO_NET_OFFLINE: "true"
+        CARGO_NET_OFFLINE: 'true'
         NPM_CONFIG_LOGLEVEL: info
         XDG_CACHE_HOME: /run/build/fluxer/flatpak-node/cache
-        ELECTRON_SKIP_BINARY_DOWNLOAD: "true"
+        ELECTRON_SKIP_BINARY_DOWNLOAD: 'true'
         npm_config_nodedir: /usr/lib/sdk/node24
         npm_config_store_dir: /run/build/fluxer/flatpak-node/pnpm-store
-        npm_config_offline: "true"
+        npm_config_offline: 'true'
     build-commands:
       - pnpm install --ignore-scripts --frozen-lockfile --offline --force
       - |
@@ -69,8 +69,8 @@ modules:
       - type: git
         url: https://github.com/fluxerapp/fluxer.git
         disable-submodules: true
-        tag: fluxer-desktop-stable@2026.920.41303
-        commit: c157ab5752084ba424b80b66f7b3b6ca4abba1e3
+        tag: fluxer-desktop-stable@2026.920.144558
+        commit: 416af4bec47b04e0acc95619f84bde5c7042a344
         x-checker-data:
           type: git
           is-main-source: true
