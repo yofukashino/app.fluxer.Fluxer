@@ -9,6 +9,8 @@ COMMIT=$(awk '
   found && /^[[:space:]]*commit:/ { print $2; exit }
   found && /^[[:space:]]*- / { exit }
 ' "$CUR_DIR/app.fluxer.Fluxer.yml")
+
+echo ""
 SOURCE_URL="https://github.com/fluxerapp/fluxer"
 
 WORKDIR="$(mktemp -d -t fluxer-flatpak-XXXXXX)"
@@ -27,7 +29,7 @@ cd "./fluxer"
 
 pip install pipx
 
-pipx install git+https://github.com/flatpak/flatpak-builder-tools.git#subdirectory=node
+pipx install git+https://github.com/flatpak/flatpak-builder-tools.git#subdirectory=node  --force
 
 flatpak-node-generator pnpm "./pnpm-lock.yaml" -o "pnpm-sources.json"
 
