@@ -31,7 +31,7 @@ pip install pipx
 
 pipx install git+https://github.com/flatpak/flatpak-builder-tools.git#subdirectory=node  --force
 
-flatpak-node-generator pnpm "./pnpm-lock.yaml" -o "pnpm-sources.json"
+flatpak-node-generator pnpm "./pnpm-lock.yaml" -o "pnpm-sources.json" --pnpm-store-version v11
 
 pip install flatpak-cargo-generator
 
