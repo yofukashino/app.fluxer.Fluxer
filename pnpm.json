@@ -2,7 +2,7 @@
     {
         "type": "archive",
         "url": "https://registry.npmjs.org/pnpm/-/pnpm-11.27.0.tgz",
-        "sha512": "498e1fb4cca5aa06c1dcf2611e6fafc50972ffe7189998c409e90de74566444298ffe43e6cd2acdc775ba1aa7cc5e092a8b7054c811ba8c5770f84693d33d2dc",
+        "sha512": "ad12821463bb143295f1fa3ecde77a6b9b97a7990386da800ff57bffc3964dc64b7b1c7559d5dbe5c337aea659ed9c8937d4370bd198ca2009bc6fa0249808e7",
         "dest": "pnpm"
     },
     {
