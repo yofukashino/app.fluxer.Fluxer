@@ -78,6 +78,8 @@ modules:
           tag-pattern: fluxer-desktop-stable@([\d.]+)$
       - type: file
         path: app.fluxer.Fluxer.sh
+      - type: patch
+        path: metainfo.patch
       - pnpm.json
       - pnpm-sources.json
       - cargo-sources.json
