@@ -13,6 +13,7 @@ modules:
       - type: git
         url: https://github.com/PJK/libcbor
         tag: v0.14.0
+        commit: 6730c20ab487c0b4dc5fb3fea918937085355bac
   - name: libfido2
     buildsystem: cmake
     config-opts:
@@ -29,3 +30,4 @@ modules:
       - type: git
         url: https://github.com/Yubico/libfido2
         tag: 1.17.0
+        commit: b974e7cf2ee7392134cc12c08b76a068cf250dd8
